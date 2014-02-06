@@ -1,0 +1,26 @@
+/* 
+    Document   : custom
+    Created on : 10/12/2013, 06:07:19 PM
+    Author     : alejandro
+    Description: Estilos especificos van aqui
+        Purpose of the stylesheet follows.
+*/
+
+.table-header-center{
+  text-align: center;
+  font-weight: bold;
+}
+
+.text-align-vertical{
+  line-height: 200% !important;
+}
+
+#alert-info{
+  display: none;
+}
+
+
+.edit{
+  
+  margin-left: 200px;
+}

@@ -1,0 +1,31 @@
+<?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
+
+class Page_about extends CI_Controller {
+
+  private $session_id;
+	public function __construct()
+	{
+	    parent::__construct();
+	    $this->layout->setLayout('template_base');   
+      $this->load->helper('menu_active');
+      $this->session_id = $this->session->userdata('username');
+	}
+	
+	public function index()
+	{
+		$this->layout->setTitle("About - Infomed");
+		$this->layout->setKeywords("Infomed, Infomed");
+		$this->layout->setDescripcion("Pagina acerca de Infomed");
+    
+    if(!empty($this->session_id)){
+      $data = array('data' => $this->session->userdata('data'));
+      $this->layout->view('about',  $data);
+    }else{
+      redirect(base_url()."login/signin.php",301);
+    }   
+    
+    
+	}
+  
+
+}
