@@ -13,7 +13,7 @@
 
 <?php echo $this->layout->js; ?> 
 <!--**********fin auxiliares*****************-->
-
+  
 <!-- Bootstrap core CSS -->
 <link href="<?php echo base_url() ?>public/css/bootstrap.css" rel="stylesheet">
 <link href="<?php echo base_url() ?>public/font-awesome-4.0.3/css/font-awesome.css" rel="stylesheet">

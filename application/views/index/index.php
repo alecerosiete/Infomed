@@ -3,13 +3,10 @@
 ?>
 <h1>Infomed</h1>
 
-<p>Sistema de Gestion de Contactos</p>
-<!-- Filtro -->
+<p>Sistema de Gestion de Clientes</p>
 
-<!-- Fin de filtro -->
 <?php //print_r($this->session->userdata('data'))
 
 ?>
 
-  <a class="btn btn-primary" href="#" role="button">View navbar docs &raquo;</a>
 </p>

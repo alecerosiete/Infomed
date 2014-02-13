@@ -18,6 +18,12 @@
             <li class="<?php echo active_link('index'); ?>">
               <a href="<?=base_url()."index.php"?>">Inicio</a>
             </li>
+            <li class="<?php echo active_link('page_clients'); ?>">
+              <a href="<?=base_url()."page_clients.php"?>">Clientes</a>
+            </li>
+            <li class="<?php echo active_link('page_report'); ?>">
+              <a href="<?=base_url()."page_report.php"?>">Reporte</a>
+            </li>
             <li class="<?php echo active_link('page_about'); ?>">
               <a href="<?=base_url()."page_about.php"?>">Acerca de</a>
             </li>
@@ -25,9 +31,10 @@
               <a href="<?=base_url()."page_help.php"?>">Ayuda</a>
             </li>
             <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Administracion <b class="caret"></b></a>
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Sistema <b class="caret"></b></a>
               <ul class="dropdown-menu">
                 <?php if(assertRole(ROLE_ADMIN)): ?>
+                <li class="dropdown-header">Administracion</li>
                 <li><a href="admin_users.php">Usuarios</a></li>                
                 <li><a href="admin_config.php">Configuracion</a></li>
                 <li class="divider"></li>

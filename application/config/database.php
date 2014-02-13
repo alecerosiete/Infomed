@@ -49,9 +49,9 @@ $active_group = 'default';
 $active_record = TRUE;
 
 $db['default']['hostname'] = 'localhost';
-$db['default']['username'] = 'codeIgniter';
-$db['default']['password'] = 'codeIgniter';
-$db['default']['database'] = 'codeIgniter';
+$db['default']['username'] = 'infomed';
+$db['default']['password'] = 'infomed';
+$db['default']['database'] = 'infomed';
 $db['default']['dbdriver'] = 'mysql';
 $db['default']['dbprefix'] = '';
 $db['default']['pconnect'] = TRUE;

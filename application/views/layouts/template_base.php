@@ -3,6 +3,7 @@
 <html lang="en">
   <head>
     <!-- Import Headers -->
+
     <?php echo $headers_for_layout; ?>
   </head>
 
@@ -28,10 +29,16 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="<?php echo base_url() ?>public/js/jquery_1_10_2.js"></script>
+    <script src="<?php echo base_url() ?>public/js/jquery-1.11.0.js"></script>
+<!--
+    <script src="<?php echo base_url() ?>public/js/bootstrap.js"></script>-->
     <script src="<?php echo base_url() ?>public/js/bootstrap.min.js"></script>
 
     <script src="<?php echo base_url() ?>public/js/ajax/modal.js"></script>
-     
   </body>
 </html>
+
+
+
+
+  

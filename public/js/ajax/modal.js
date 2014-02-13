@@ -192,3 +192,30 @@ $('#editMyAccount').click(function(){
   },"json")
 
 })
+
+
+$('#getClient').click(function(){
+  
+  var name = $("#search").val();
+  
+
+  $.post("/page_clients/searchClient",
+  {
+    name:name
+  },
+  function(response){ 
+    if(response.status){      
+      $("#clientInfo").html(response.data);
+    }else{
+      var html = response.data;
+      $("#sms_notification").html(html);  
+    }
+  },"json")
+
+})
+
+
+
+
+
+
