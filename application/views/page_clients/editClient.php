@@ -1,9 +1,8 @@
-
-<h1>Nuevo cliente</h1>
+<h1>Editar cliente</h1>
 
 
 <div class="container-fluid ">
-      <p>Complete el formulario con los datos del cliente.</p>   
+      <p>Realize las modificaciones que precise.</p>   
       <?php 
       $atributos = array('id' => 'form_new_client', 'name' => 'form_new_client', 'class' => 'form-horizontal ', 'role' => 'form');
       echo form_open(null,$atributos);  
@@ -12,7 +11,7 @@
   <div class="form-group">
     <label for="clientName" class="col-md-2 control-label">Nombre</label>
     <div class="col-md-9">
-      <input type="text" class="form-control" id="clientName" placeholder="Nombre" >
+      <input type="text" class="form-control" id="clientName" placeholder="Nombre" value="<?=$edit['name']?>">
     </div>
   </div>
   <div class="form-group">
@@ -83,7 +82,7 @@
   </div> 
 </div>
 <div class="col-xs-6">
-<!-- Inicio de Selects -->
+      
   <div class="form-group">
     <label for="clientWorkPlace" class="col-md-3 control-label">Lugar de Trabajo</label>
     <div class="col-sm-9">
@@ -92,7 +91,7 @@
             <option value="vacio" placeholder="Lugar de Trabajo"></option>   
         </select>        
         <span class="input-group-btn">
-          <button class="btn btn-default" id="addClientWorkPlace" type="button"><span class="glyphicon glyphicon-plus"></span></button>
+          <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-plus"></span></button>
         </span>      
       </div><!-- /input-group -->
       
@@ -182,6 +181,7 @@
      
     </div>
     </div>
+  
   </div>
   </div>
   
@@ -209,30 +209,5 @@ form_close();
 ?>
         
 
-
-<!-- Modal -->
-<div class="modal fade" id="actions" tabindex="-1" role="dialog" aria-labelledby="actions" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-        <h4 class="modal-title" id="actionTitle">
-           
-        </h4>
-      </div>
-      <div class="modal-body">       
-        
-      </div>      
-      <div class="modal-footer">
-          <div class="modal-notif">      
-         
-          </div>
-          <div id="saveAction">
-              
-            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-          </div>
-        
-      </div>
-    </div><!-- /.modal-content -->
-  </div><!-- /.modal-dialog -->
-</div><!-- /.modal -->
+  </div>
+</div>

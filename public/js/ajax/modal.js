@@ -218,4 +218,14 @@ $('#getClient').click(function(){
 
 
 
+function editClient(code){
+  alert("hola! "+code);
+  
+  var url = 'page_clients/editClient';
+  var form = $('<form action="' + url + '" method="post">' +
+    '<input type="text" name="nombre" id="nom" value="' + code + '" />' +
+    '</form>');
+  $('body').append(form);
+  $(form).submit();
+}
 

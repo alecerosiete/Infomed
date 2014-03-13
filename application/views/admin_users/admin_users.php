@@ -39,7 +39,7 @@ echo validation_errors();
            
         </h4>
       </div>
-      <div class="modal-body">       
+      <div class="modal-body">      
         
       </div>      
       <div class="modal-footer">

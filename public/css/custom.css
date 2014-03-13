@@ -5,7 +5,12 @@
     Description: Estilos especificos van aqui
         Purpose of the stylesheet follows.
 */
-
+.label-top{
+    top:9px;
+}
+.width-input{
+    width:71%!important;
+}
 .table-header-center{
   text-align: center;
   font-weight: bold;

@@ -40,7 +40,6 @@
 
 $route['default_controller'] = "index";
 //$route['pages/(:any)'] = "index.php/pages";
-
 $route['404_override'] = '';
 
 

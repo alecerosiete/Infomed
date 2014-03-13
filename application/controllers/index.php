@@ -18,17 +18,17 @@ class Index extends CI_Controller {
 		$this->layout->setKeywords("Infomed, clientes");
 		$this->layout->setDescripcion("Pagina principal de Infomed");
     
-    if(!empty($this->session_id)){
-      $data = array(
-          'data' => $this->session->userdata('data')
-          
-              
-      );
-      $this->layout->view('index',$data);
-      
-    }else{
-      redirect(base_url()."login/signin.php",301);
-    }   
+            if(!empty($this->session_id)){
+              $data = array(
+                  'data' => $this->session->userdata('data')
+
+
+              );
+              $this->layout->view('index',$data);
+
+            }else{
+              redirect(base_url()."login/signin.php",301);
+            }   
    
 	}
   

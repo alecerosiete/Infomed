@@ -7,7 +7,7 @@
     <div class="col-md-4">
       <p>Cree un nuevo cliente.</p>
       <!-- Button to trigger modal -->
-      <a href="page_clients/newClient" class="btn btn-primary" role="button">
+      <a href="page_clients/newClient.php" class="btn btn-primary" role="button">
         Nuevo Cliente
       </a>
       <!--<button type="button" id="newClient" class="btn btn-primary">Nuevo</button>-->
